@@ -1,0 +1,9 @@
+<html>
+	
+	<div ng-repeat = 'product in productsCtrl.list' ui-sref="productDetails({id:product.id})" ng-click="productsCtrl.select(product.id)">
+		<div ng-class="selected:productsCtrl.selected=== product.id">
+			<img ng-src="{{product.imgThumbnail}}" err-src="http://google.com/favicon.ico">
+		</div>
+	</div>
+	
+</html>

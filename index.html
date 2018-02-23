@@ -1,0 +1,25 @@
+<html ng-app="inventoryManager">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<ul>
+				<li><a ui-sref='login'>Login</a></li>
+				<li><a ui-sref='products'>Products</a></li>
+			</ul>
+		</nav>
+		
+		<ui-view></ui-view>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/products-controller.js"></script>
+		<script src="js/product-factory.js"></script>
+		<script src="js/login-controller.js"></script>
+		<script src="js/err-src.js"></script>
+		<script src="js/prod-detail.js"></script>
+	</body>
+</html>
